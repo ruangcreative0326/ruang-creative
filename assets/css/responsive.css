@@ -519,4 +519,107 @@
     }
 
 
-      }
+}
+/* ==========================
+   RESPONSIVE LIGHTBOX
+========================== */
+
+@media(max-width:768px){
+
+
+    .lightbox img{
+
+        max-width:95%;
+
+        max-height:75%;
+
+        border-radius:15px;
+
+    }
+
+
+    .lightbox-close{
+
+        top:20px;
+
+        right:20px;
+
+        font-size:38px;
+
+    }
+
+
+}
+/* ==========================
+   RESPONSIVE GOOGLE MAPS
+========================== */
+
+@media(max-width:768px){
+
+
+    .map-container{
+
+        margin-top:30px;
+
+        border-radius:18px;
+
+    }
+
+
+    .map-container iframe{
+
+        height:280px;
+
+    }
+
+
+    #contact .btn-primary{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
+/* ==========================
+   RESPONSIVE BOOKING FORM
+========================== */
+
+@media(max-width:768px){
+
+
+    #booking{
+
+        padding:70px 0;
+
+    }
+
+
+    .booking-form{
+
+        margin-top:35px;
+
+        gap:15px;
+
+    }
+
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea{
+
+        font-size:15px;
+
+        padding:14px 16px;
+
+    }
+
+
+    .booking-form button{
+
+        width:100%;
+
+    }
+
+}
