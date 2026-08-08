@@ -1,1 +1,522 @@
+/* ==========================
+   MOBILE NAVBAR
+========================== */
 
+@media(max-width:768px){
+
+    .nav-menu{
+
+        position:fixed;
+        top:80px;
+        left:-100%;
+
+        width:100%;
+        height:auto;
+
+        background:white;
+
+        flex-direction:column;
+        align-items:center;
+
+        padding:40px 0;
+
+        gap:25px;
+
+        transition:.4s;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.1);
+    }
+
+
+    .nav-menu.active{
+
+        left:0;
+
+    }
+
+
+    .btn-booking{
+
+        display:none;
+
+    }
+
+
+    .menu-btn{
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        gap:6px;
+
+    }
+
+
+    .menu-btn span{
+
+        width:28px;
+        height:3px;
+
+        background:#111;
+
+        border-radius:10px;
+
+    }
+
+}
+/* ==========================
+   HAMBURGER ANIMATION
+========================== */
+
+.menu-btn.active span:nth-child(1){
+
+    transform:rotate(45deg)
+    translate(6px,6px);
+
+}
+
+
+.menu-btn.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+
+.menu-btn.active span:nth-child(3){
+
+    transform:rotate(-45deg)
+    translate(6px,-6px);
+
+}
+
+
+.menu-btn span{
+
+    transition:.3s;
+
+}
+/* ==========================
+   RESPONSIVE HERO MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+    #hero{
+
+        min-height:auto;
+        padding-top:120px;
+        padding-bottom:60px;
+
+    }
+
+
+    .hero{
+
+        grid-template-columns:1fr;
+        gap:40px;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:36px;
+        line-height:1.3;
+
+    }
+
+
+    .hero-description{
+
+        font-size:16px;
+
+    }
+
+
+    .hero-buttons{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+
+    .btn-primary,
+    .btn-secondary{
+
+        text-align:center;
+        width:100%;
+
+    }
+
+
+    .hero-image img{
+
+        height:400px;
+
+    }
+
+}
+/* ==========================
+   RESPONSIVE ABOUT MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+    #about{
+
+        padding:70px 0;
+
+    }
+
+
+    .about{
+
+        grid-template-columns:1fr;
+        gap:35px;
+
+    }
+
+
+    .about-image img{
+
+        height:240px;
+
+    }
+
+
+    .about-content h2{
+
+        font-size:32px;
+
+    }
+
+
+    .about-content p{
+
+        font-size:16px;
+
+    }
+
+
+    .about-list{
+
+        flex-direction:column;
+        gap:12px;
+
+    }
+
+
+    .about-list div{
+
+        text-align:center;
+
+    }
+
+}
+/* ==========================
+   RESPONSIVE SERVICES MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+    #services{
+
+        padding:70px 0;
+
+    }
+
+
+    .section-header h2{
+
+        font-size:32px;
+
+    }
+
+
+    .service-list{
+
+        grid-template-columns:1fr;
+        gap:20px;
+
+    }
+
+
+    .service-card{
+
+        padding:30px 20px;
+
+    }
+
+
+    .service-card h3{
+
+        font-size:22px;
+
+    }
+
+
+    .service-card p{
+
+        font-size:16px;
+
+    }
+
+}
+/* =========================
+   PORTFOLIO MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .portfolio {
+        padding: 70px 0;
+    }
+
+
+    .portfolio .section-title h2 {
+        font-size: 30px;
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .gallery-item {
+
+        height: 280px;
+
+        border-radius: 20px;
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+    .portfolio .section-title h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .gallery-item {
+
+        height: 240px;
+
+    }
+
+}
+/* ==========================
+   RESPONSIVE PRICING MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+    #pricing{
+
+        padding:70px 0;
+
+    }
+
+
+    .pricing-list{
+
+        grid-template-columns:1fr;
+        gap:35px;
+
+    }
+
+
+    .pricing-card{
+
+        padding:35px 25px;
+
+    }
+
+
+    .pricing-card.featured{
+
+        transform:scale(1);
+
+    }
+
+
+    .pricing-card h3{
+
+        font-size:26px;
+
+    }
+
+
+    .price{
+
+        font-size:28px;
+
+    }
+
+}
+/* ==========================
+   RESPONSIVE TESTIMONIAL MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+    #testimonials{
+
+        padding:70px 0;
+
+    }
+
+
+    .testimonial-list{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    .testimonial-card{
+
+        padding:30px 20px;
+
+    }
+
+
+    .stars{
+
+        font-size:22px;
+
+    }
+
+
+    .testimonial-card p{
+
+        font-size:16px;
+
+    }
+
+}
+/* ==========================
+   RESPONSIVE FAQ MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+    #faq{
+
+        padding:70px 0;
+
+    }
+
+
+    .faq-list{
+
+        margin-top:35px;
+
+    }
+
+
+    .faq-question{
+
+        padding:20px;
+
+        font-size:16px;
+
+    }
+
+
+    .faq-question span{
+
+        font-size:24px;
+
+    }
+
+
+    .faq-answer{
+
+        padding:0 20px;
+
+    }
+
+
+    .faq-answer p{
+
+        font-size:15px;
+
+    }
+
+}
+/* ==========================
+   RESPONSIVE CONTACT MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+    #contact{
+
+        padding:70px 0;
+
+    }
+
+
+    .contact{
+
+        grid-template-columns:1fr;
+        gap:35px;
+
+    }
+
+
+    .contact-content h2{
+
+        font-size:32px;
+
+    }
+
+
+    .contact-content p{
+
+        font-size:16px;
+
+    }
+
+
+    .contact-info{
+
+        padding:30px 25px;
+
+    }
+
+
+    .contact-item h3{
+
+        font-size:18px;
+
+    }
+
+
+      }
