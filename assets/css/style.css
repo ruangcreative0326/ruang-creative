@@ -1052,3 +1052,292 @@ section{
 
 }
 
+/* ==========================
+   FLOATING WHATSAPP BUTTON
+========================== */
+
+.floating-wa{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:15px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+    z-index:999;
+
+    transition:.3s;
+
+}
+
+
+.floating-wa:hover{
+
+    transform:translateY(-5px);
+
+    opacity:.9;
+
+}
+/* ==========================
+   WHATSAPP ANIMATION
+========================== */
+
+
+.floating-wa::before{
+
+    content:"💬";
+
+    font-size:20px;
+
+}
+
+
+
+.floating-wa{
+
+    animation:pulse-wa 2s infinite;
+
+}
+
+
+
+@keyframes pulse-wa{
+
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(37,211,102,.5);
+
+    }
+
+
+    70%{
+
+        box-shadow:0 0 0 15px rgba(37,211,102,0);
+
+    }
+
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+
+    }
+
+}
+/* ==========================
+   GALLERY LIGHTBOX
+========================== */
+
+
+.gallery-img{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.gallery-img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+.lightbox{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.9);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:85%;
+
+    border-radius:20px;
+
+}
+
+
+
+
+.lightbox.active{
+
+    display:flex;
+
+}
+
+
+
+
+.lightbox-close{
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    color:#fff;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+}
+/* ==========================
+   GOOGLE MAP SECTION
+========================== */
+
+
+.map-container{
+
+    margin-top:40px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+
+.map-container iframe{
+
+    display:block;
+
+    width:100%;
+
+}
+
+
+#contact .btn-primary{
+
+    margin-top:25px;
+
+}
+/* ==========================
+   BOOKING FORM
+========================== */
+
+
+#booking{
+
+    padding:100px 0;
+
+}
+
+
+
+.booking-form{
+
+    max-width:700px;
+
+    margin:50px auto 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:1px solid #ddd;
+
+    border-radius:15px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus{
+
+    border-color:#D4AF37;
+
+}
+
+
+
+.booking-form textarea{
+
+    min-height:140px;
+
+    resize:none;
+
+}
+
+
+
+.booking-form button{
+
+    border:none;
+
+    cursor:pointer;
+
+}
