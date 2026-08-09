@@ -1,625 +1,660 @@
+/* ==================================================
+   RUANG CREATIVE
+   RESPONSIVE CSS V3.0 FINAL
+================================================== */
+
+
 /* ==========================
-   MOBILE NAVBAR
+   TABLET & MOBILE
 ========================== */
 
-@media(max-width:768px){
-
-    .nav-menu{
-
-        position:fixed;
-        top:80px;
-        left:-100%;
-
-        width:100%;
-        height:auto;
-
-        background:white;
-
-        flex-direction:column;
-        align-items:center;
-
-        padding:40px 0;
-
-        gap:25px;
-
-        transition:.4s;
-
-        box-shadow:0 10px 30px rgba(0,0,0,.1);
-    }
-
-
-    .nav-menu.active{
-
-        left:0;
-
-    }
-
-
-    .btn-booking{
-
-        display:none;
-
-    }
-
-
-    .menu-btn{
-
-        display:flex;
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        gap:6px;
-
-    }
-
-
-    .menu-btn span{
-
-        width:28px;
-        height:3px;
-
-        background:#111;
-
-        border-radius:10px;
-
-    }
-
-}
-/* ==========================
-   HAMBURGER ANIMATION
-========================== */
-
-.menu-btn.active span:nth-child(1){
-
-    transform:rotate(45deg)
-    translate(6px,6px);
-
-}
-
-
-.menu-btn.active span:nth-child(2){
-
-    opacity:0;
-
-}
-
-
-.menu-btn.active span:nth-child(3){
-
-    transform:rotate(-45deg)
-    translate(6px,-6px);
-
-}
-
-
-.menu-btn span{
-
-    transition:.3s;
-
-}
-/* ==========================
-   RESPONSIVE HERO MOBILE
-========================== */
 
 @media(max-width:768px){
 
 
-    #hero{
 
-        min-height:auto;
-        padding-top:120px;
-        padding-bottom:60px;
-
-    }
+/* ==========================
+   GLOBAL
+========================== */
 
 
-    .hero{
+.container{
 
-        grid-template-columns:1fr;
-        gap:40px;
-
-    }
-
-
-    .hero-content h1{
-
-        font-size:36px;
-        line-height:1.3;
-
-    }
-
-
-    .hero-description{
-
-        font-size:16px;
-
-    }
-
-
-    .hero-buttons{
-
-        flex-direction:column;
-        gap:15px;
-
-    }
-
-
-    .btn-primary,
-    .btn-secondary{
-
-        text-align:center;
-        width:100%;
-
-    }
-
-
-    .hero-image img{
-
-        height:400px;
-
-    }
+    width:92%;
 
 }
+
+
+
+section{
+
+    padding:70px 0;
+
+}
+
+
+
+h1{
+
+    font-size:36px;
+
+}
+
+
+
+h2{
+
+    font-size:30px;
+
+}
+
+
+
+h3{
+
+    font-size:20px;
+
+}
+
+
+
+p{
+
+    font-size:15px;
+
+}
+
+
+
+
+
+
+
 /* ==========================
-   RESPONSIVE ABOUT MOBILE
+   NAVBAR MOBILE
 ========================== */
+
+
+.header{
+
+    position:fixed;
+
+}
+
+
+
+.nav{
+
+    height:70px;
+
+}
+
+
+
+.logo img{
+
+    width:75px;
+
+}
+
+
+
+nav ul{
+
+    gap:15px;
+
+}
+
+
+
+nav ul li a{
+
+    font-size:13px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   HERO MOBILE
+========================== */
+
+
+.hero{
+
+    min-height:90vh;
+
+    background-position:center;
+
+}
+
+
+
+.hero-text{
+
+    max-width:100%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:36px;
+
+}
+
+
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+
+
+.hero-btn{
+
+    padding:13px 25px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   SECTION HEADER MOBILE
+========================== */
+
+
+.section-header{
+
+    margin-bottom:35px;
+
+}
+
+
+
+.section-tag{
+
+    font-size:12px;
+
+    letter-spacing:1.5px;
+
+}
+
+
+
+}
+
+/* ==========================
+   ABOUT MOBILE
+========================== */
+
 
 @media(max-width:768px){
 
 
-    #about{
+.about-grid{
 
-        padding:70px 0;
+    grid-template-columns:1fr;
 
-    }
-
-
-    .about{
-
-        grid-template-columns:1fr;
-        gap:35px;
-
-    }
-
-
-    .about-image img{
-
-        height:240px;
-
-    }
-
-
-    .about-content h2{
-
-        font-size:32px;
-
-    }
-
-
-    .about-content p{
-
-        font-size:16px;
-
-    }
-
-
-    .about-list{
-
-        flex-direction:column;
-        gap:12px;
-
-    }
-
-
-    .about-list div{
-
-        text-align:center;
-
-    }
+    gap:30px;
 
 }
+
+
+
+.about-image{
+
+    order:1;
+
+}
+
+
+
+.about-content{
+
+    order:2;
+
+}
+
+
+
+
+
+
+
 /* ==========================
-   RESPONSIVE SERVICES MOBILE
+   SERVICES MOBILE
 ========================== */
+
+
+.service-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+
+
+.service-card{
+
+    padding:25px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   PORTFOLIO FILTER MOBILE
+========================== */
+
+
+.portfolio-filter{
+
+    gap:10px;
+
+}
+
+
+
+.filter-btn{
+
+    padding:10px 18px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   GALLERY MOBILE
+========================== */
+
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+
+
+.gallery-img{
+
+    height:260px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   LIGHTBOX MOBILE
+========================== */
+
+
+.lightbox img{
+
+    max-width:95%;
+
+    max-height:75%;
+
+}
+
+
+
+.lightbox-close{
+
+    top:20px;
+
+    right:20px;
+
+    font-size:38px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   PRICING MOBILE
+========================== */
+
+
+.pricing-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+
+
+.price-card{
+
+    padding:30px 20px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   TESTIMONIAL MOBILE
+========================== */
+
+
+.testimonial-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+
+
+.testimonial-card{
+
+    padding:25px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   STATISTIC MOBILE
+========================== */
+
+
+.stats-grid{
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+
+
+.stat-item{
+
+    padding:25px 10px;
+
+}
+
+
+
+.stat-item h2{
+
+    font-size:35px;
+
+}
+
+
+
+.stat-item p{
+
+    font-size:14px;
+
+}
+
+
+
+}
+
+/* ==========================
+   FAQ MOBILE
+========================== */
+
 
 @media(max-width:768px){
 
 
-    #services{
 
-        padding:70px 0;
+.faq-wrapper{
 
-    }
-
-
-    .section-header h2{
-
-        font-size:32px;
-
-    }
-
-
-    .service-list{
-
-        grid-template-columns:1fr;
-        gap:20px;
-
-    }
-
-
-    .service-card{
-
-        padding:30px 20px;
-
-    }
-
-
-    .service-card h3{
-
-        font-size:22px;
-
-    }
-
-
-    .service-card p{
-
-        font-size:16px;
-
-    }
-
-}
-/* =========================
-   PORTFOLIO MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .portfolio {
-        padding: 70px 0;
-    }
-
-
-    .portfolio .section-title h2 {
-        font-size: 30px;
-    }
-
-
-    .gallery-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-
-    }
-
-
-    .gallery-item {
-
-        height: 280px;
-
-        border-radius: 20px;
-
-    }
+    width:100%;
 
 }
 
 
 
-@media (max-width: 480px) {
+.faq-question{
 
+    padding:20px;
 
-    .portfolio .section-title h2 {
+    font-size:16px;
 
-        font-size: 26px;
-
-    }
-
-
-    .gallery-item {
-
-        height: 240px;
-
-    }
+    text-align:left;
 
 }
+
+
+
+.faq-question span{
+
+    font-size:25px;
+
+}
+
+
+
+.faq-answer p{
+
+    padding:0 20px 20px;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+
+
 /* ==========================
-   RESPONSIVE PRICING MOBILE
+   BOOKING MOBILE
 ========================== */
 
-@media(max-width:768px){
 
+.booking-form{
 
-    #pricing{
-
-        padding:70px 0;
-
-    }
-
-
-    .pricing-list{
-
-        grid-template-columns:1fr;
-        gap:35px;
-
-    }
-
-
-    .pricing-card{
-
-        padding:35px 25px;
-
-    }
-
-
-    .pricing-card.featured{
-
-        transform:scale(1);
-
-    }
-
-
-    .pricing-card h3{
-
-        font-size:26px;
-
-    }
-
-
-    .price{
-
-        font-size:28px;
-
-    }
+    width:100%;
 
 }
-/* ==========================
-   RESPONSIVE TESTIMONIAL MOBILE
-========================== */
-
-@media(max-width:768px){
 
 
-    #testimonials{
 
-        padding:70px 0;
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
 
-    }
+    padding:14px 15px;
 
-
-    .testimonial-list{
-
-        grid-template-columns:1fr;
-
-        gap:20px;
-
-    }
-
-
-    .testimonial-card{
-
-        padding:30px 20px;
-
-    }
-
-
-    .stars{
-
-        font-size:22px;
-
-    }
-
-
-    .testimonial-card p{
-
-        font-size:16px;
-
-    }
+    font-size:15px;
 
 }
-/* ==========================
-   RESPONSIVE FAQ MOBILE
-========================== */
-
-@media(max-width:768px){
 
 
-    #faq{
 
-        padding:70px 0;
+.booking-form textarea{
 
-    }
-
-
-    .faq-list{
-
-        margin-top:35px;
-
-    }
-
-
-    .faq-question{
-
-        padding:20px;
-
-        font-size:16px;
-
-    }
-
-
-    .faq-question span{
-
-        font-size:24px;
-
-    }
-
-
-    .faq-answer{
-
-        padding:0 20px;
-
-    }
-
-
-    .faq-answer p{
-
-        font-size:15px;
-
-    }
+    min-height:120px;
 
 }
-/* ==========================
-   RESPONSIVE CONTACT MOBILE
-========================== */
-
-@media(max-width:768px){
 
 
-    #contact{
 
-        padding:70px 0;
+.booking-form .btn-primary{
 
-    }
-
-
-    .contact{
-
-        grid-template-columns:1fr;
-        gap:35px;
-
-    }
-
-
-    .contact-content h2{
-
-        font-size:32px;
-
-    }
-
-
-    .contact-content p{
-
-        font-size:16px;
-
-    }
-
-
-    .contact-info{
-
-        padding:30px 25px;
-
-    }
-
-
-    .contact-item h3{
-
-        font-size:18px;
-
-    }
-
+    width:100%;
 
 }
+
+
+
+
+
+
+
 /* ==========================
-   RESPONSIVE LIGHTBOX
+   CONTACT MOBILE
 ========================== */
 
-@media(max-width:768px){
 
+.contact-info{
 
-    .lightbox img{
-
-        max-width:95%;
-
-        max-height:75%;
-
-        border-radius:15px;
-
-    }
-
-
-    .lightbox-close{
-
-        top:20px;
-
-        right:20px;
-
-        font-size:38px;
-
-    }
-
+    text-align:center;
 
 }
-/* ==========================
-   RESPONSIVE GOOGLE MAPS
-========================== */
-
-@media(max-width:768px){
 
 
-    .map-container{
 
-        margin-top:30px;
+.contact-info p{
 
-        border-radius:18px;
-
-    }
-
-
-    .map-container iframe{
-
-        height:280px;
-
-    }
-
-
-    #contact .btn-primary{
-
-        width:100%;
-
-        text-align:center;
-
-    }
+    font-size:15px;
 
 }
+
+
+
+
+
+
+
 /* ==========================
-   RESPONSIVE BOOKING FORM
+   MAP MOBILE
 ========================== */
 
-@media(max-width:768px){
+
+.map-container{
+
+    border-radius:18px;
+
+}
 
 
-    #booking{
 
-        padding:70px 0;
+.map-container iframe{
 
-    }
+    height:280px;
 
-
-    .booking-form{
-
-        margin-top:35px;
-
-        gap:15px;
-
-    }
+}
 
 
-    .booking-form input,
-    .booking-form select,
-    .booking-form textarea{
-
-        font-size:15px;
-
-        padding:14px 16px;
-
-    }
 
 
-    .booking-form button{
 
-        width:100%;
 
-    }
+
+/* ==========================
+   FOOTER MOBILE
+========================== */
+
+
+.footer{
+
+    padding:30px 15px;
+
+}
+
+
+
+.footer p{
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   WHATSAPP MOBILE
+========================== */
+
+
+.floating-wa{
+
+    right:15px;
+
+    bottom:15px;
+
+    padding:12px 18px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   FINAL MOBILE CLEAN
+========================== */
+
+
+img{
+
+    max-width:100%;
+
+}
+
+
+
+button{
+
+    max-width:100%;
+
+}
+
+
 
 }
