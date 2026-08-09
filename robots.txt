@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+
+
+Sitemap:
+https://ruangcreative.github.io/ruang-creative/sitemap.xml
