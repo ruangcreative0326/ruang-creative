@@ -2,6 +2,4 @@ User-agent: *
 
 Allow: /
 
-
-Sitemap:
-https://ruangcreative.github.io/ruang-creative/sitemap.xml
+Sitemap: https://ruangcreative0326.github.io/ruang-creative/sitemap.xml
